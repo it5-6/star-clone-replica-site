@@ -1,0 +1,63 @@
+{
+  "header": {
+    "logo": "STARDUCT",
+    "search_placeholder": "Find products, categories you want...",
+    "tracking": "Tracking",
+    "my_order": "my order",
+    "your_cart": "Your cart",
+    "my_account": "My account",
+    "nav": {
+      "introduction": "Introduction",
+      "products": "Products",
+      "projects": "Projects",
+      "news": "News",
+      "library": "Library",
+      "career": "Career",
+      "contact": "Contact us"
+    }
+  },
+  "hero": {
+    "slide1": {
+      "title": "Representative of MEP system accessories manufacturing industry in Vietnam",
+      "description": "All products from Star Asia are highly appreciated and always attract the concentration of the market.",
+      "button": "Learn More"
+    },
+    "slide2": {
+      "title": "Occupying 60% of the market share of the high-end customer segment in Vietnam",
+      "description": "Star Asia supplies accessories for corporations & enterprises and also contributes to various large constructions throughout the country, from the North to the South.",
+      "button": "Learn More"
+    },
+    "slide3": {
+      "title": "100% products that meet international standard",
+      "description": "Meet standards such as AMCA, ASHRAE, UL, SMACNA, BSI, ISO,...and gradually penetrate Philippines, USA, Europe, Korea and Japan markets.",
+      "button": "Learn More"
+    },
+    "slide4": {
+      "title": "Manufacturers are always at the forefront of innovation",
+      "description": "Asia Star owns exclusive patented inventions that are mechanical and electrical engineering products, effectively contributing to the construction, management and operation of the building!",
+      "button": "Learn More"
+    }
+  },
+  "products": {
+    "highlighted": "HIGHLIGHTED PRODUCTS",
+    "title": "Top MEP system accessories in Vietnam",
+    "items": {
+      "vav": {
+        "title": "VAV Box Systems",
+        "description": "Advanced Variable Air Volume systems for efficient building climate control"
+      },
+      "ahu": {
+        "title": "Air Handling Units",
+        "description": "High-performance air handling units for commercial and industrial applications"
+      },
+      "ductwork": {
+        "title": "Ductwork Components",
+        "description": "Premium quality ductwork and fittings for HVAC systems"
+      },
+      "control": {
+        "title": "Control Systems",
+        "description": "Smart building automation and control solutions"
+      }
+    }
+  }
+}

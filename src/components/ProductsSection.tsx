@@ -1,39 +1,44 @@
 import { Card, CardContent } from "@/components/ui/card";
-
-const products = [
-  {
-    title: "VAV Box Systems",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Advanced Variable Air Volume systems for efficient building climate control"
-  },
-  {
-    title: "Air Handling Units",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "High-performance air handling units for commercial and industrial applications"
-  },
-  {
-    title: "Ductwork Components",
-    image: "https://images.unsplash.com/photo-1558618047-dd0c81b5b6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Premium quality ductwork and fittings for HVAC systems"
-  },
-  {
-    title: "Control Systems",
-    image: "https://images.unsplash.com/photo-1558618047-dd0c81b5b6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Smart building automation and control solutions"
-  }
-];
+import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ProductsSection = () => {
+  const { t } = useTranslation();
+  const { isRTL } = useLanguage();
+
+  const products = [
+    {
+      title: t('products.items.vav.title'),
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: t('products.items.vav.description')
+    },
+    {
+      title: t('products.items.ahu.title'),
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: t('products.items.ahu.description')
+    },
+    {
+      title: t('products.items.ductwork.title'),
+      image: "https://images.unsplash.com/photo-1558618047-dd0c81b5b6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: t('products.items.ductwork.description')
+    },
+    {
+      title: t('products.items.control.title'),
+      image: "https://images.unsplash.com/photo-1558618047-dd0c81b5b6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: t('products.items.control.description')
+    }
+  ];
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className={`text-center mb-12 ${isRTL ? 'text-right' : 'text-left'}`}>
           <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-            HIGHLIGHTED PRODUCTS
+            {t('products.highlighted')}
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Top MEP system accessories in Vietnam
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            {t('products.title')}
           </h2>
         </div>
 
@@ -53,7 +58,7 @@ const ProductsSection = () => {
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
                 </div>
-                <div className="p-6">
+                <div className={`p-6 ${isRTL ? 'text-right' : 'text-left'}`}>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
                     {product.title}
                   </h3>

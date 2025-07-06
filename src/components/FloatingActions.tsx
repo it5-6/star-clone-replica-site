@@ -1,9 +1,11 @@
 import { MessageCircle, Facebook, Phone, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const FloatingActions = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { isRTL } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +21,7 @@ const FloatingActions = () => {
   };
 
   return (
-    <div className="fixed right-6 bottom-6 flex flex-col space-y-3 z-50">
+    <div className={`fixed ${isRTL ? 'left-6' : 'right-6'} bottom-6 flex flex-col space-y-3 z-50`}>
       {/* Chat Button */}
       <Button
         size="lg"
