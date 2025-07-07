@@ -34,25 +34,6 @@ const Header = () => {
 
           {/* User Actions */}
           <div className={`flex items-center space-x-6 ${isRTL ? 'space-x-reverse' : ''}`}>
-            <div className={`flex items-center space-x-2 text-sm ${isRTL ? 'space-x-reverse' : ''}`}>
-              <Truck className="w-4 h-4" />
-              <div>
-                <div className="text-xs">{t('header.tracking')}</div>
-                <div className="text-xs opacity-80">{t('header.my_order')}</div>
-              </div>
-            </div>
-            
-            <div className={`flex items-center space-x-2 text-sm ${isRTL ? 'space-x-reverse' : ''}`}>
-              <div className="relative">
-                <ShoppingCart className="w-4 h-4" />
-                <span className="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                  0
-                </span>
-              </div>
-              <div>
-                <div className="text-xs">{t('header.your_cart')}</div>
-              </div>
-            </div>
             
             <div className={`flex items-center space-x-2 text-sm ${isRTL ? 'space-x-reverse' : ''}`}>
               <User className="w-4 h-4" />
@@ -70,7 +51,7 @@ const Header = () => {
           <nav className={`flex items-center justify-between py-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
             <div className={`flex items-center space-x-8 ${isRTL ? 'space-x-reverse' : ''}`}>
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
-                {t('header.nav.introduction')}
+                {t('header.nav.about')}
               </Button>
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
                 {t('header.nav.products')}
@@ -79,13 +60,7 @@ const Header = () => {
                 {t('header.nav.projects')}
               </Button>
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
-                {t('header.nav.news')}
-              </Button>
-              <Button variant="ghost" className="text-white hover:bg-primary-hover">
-                {t('header.nav.library')}
-              </Button>
-              <Button variant="ghost" className="text-white hover:bg-primary-hover">
-                {t('header.nav.career')}
+                {t('header.nav.services')}
               </Button>
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
                 {t('header.nav.contact')}

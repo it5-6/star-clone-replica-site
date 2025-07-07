@@ -1,4 +1,5 @@
 import { MessageCircle, Facebook, Phone, ArrowUp } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -40,9 +41,10 @@ const FloatingActions = () => {
 
       <Button
         size="lg"
-        className="w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+        className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+        onClick={() => window.open('https://wa.me/your_whatsapp_number', '_blank')}
       >
-        <Phone className="w-6 h-6" />
+        <FaWhatsapp className="w-6 h-6" />
       </Button>
 
       {/* Scroll to Top Button */}

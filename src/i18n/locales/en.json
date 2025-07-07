@@ -2,17 +2,12 @@
   "header": {
     "logo": "STARDUCT",
     "search_placeholder": "Find products, categories you want...",
-    "tracking": "Tracking",
-    "my_order": "my order",
-    "your_cart": "Your cart",
     "my_account": "My account",
     "nav": {
-      "introduction": "Introduction",
+      "about": "About Us",
       "products": "Products",
       "projects": "Projects",
-      "news": "News",
-      "library": "Library",
-      "career": "Career",
+      "services": "Services",
       "contact": "Contact us"
     }
   },
@@ -59,5 +54,71 @@
         "description": "Smart building automation and control solutions"
       }
     }
+  },
+  "about": {
+    "badge": "ABOUT US",
+    "title": "Leading MEP Solutions Provider in Vietnam",
+    "description": "STARDUCT is the representative of MEP system accessories manufacturing industry in Vietnam. We occupy 60% of the market share of the high-end customer segment and supply accessories for corporations, enterprises, and large constructions throughout the country.",
+    "features": {
+      "quality": {
+        "title": "International Standards",
+        "description": "100% products meet AMCA, ASHRAE, UL, SMACNA, BSI, ISO standards"
+      },
+      "experience": {
+        "title": "15+ Years Experience",
+        "description": "Extensive experience in MEP systems and building automation solutions"
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Expanding to Philippines, USA, Europe, Korea and Japan markets"
+      },
+      "innovation": {
+        "title": "Innovation Leader",
+        "description": "Exclusive patented inventions in mechanical and electrical engineering"
+      }
+    },
+    "stats": {
+      "market_share": "Market Share in High-End Segment",
+      "quality": "International Standard Compliance",
+      "years": "Years of Experience"
+    }
+  },
+  "projects": {
+    "badge": "OUR PROJECTS",
+    "title": "Featured Projects & Installations",
+    "description": "Showcasing our expertise in large-scale MEP installations across Vietnam",
+    "items": {
+      "office_tower": {
+        "title": "Saigon Trade Center",
+        "category": "Commercial Office",
+        "description": "Complete HVAC system installation for 40-story office tower"
+      },
+      "shopping_mall": {
+        "title": "Vincom Mega Mall",
+        "category": "Retail Complex",
+        "description": "Advanced air handling and climate control systems"
+      },
+      "hospital": {
+        "title": "Cho Ray Hospital",
+        "category": "Healthcare Facility",
+        "description": "Critical care HVAC systems with specialized filtration"
+      },
+      "factory": {
+        "title": "Samsung Electronics",
+        "category": "Manufacturing",
+        "description": "Industrial ventilation and process cooling systems"
+      }
+    },
+    "view_details": "View Details",
+    "view_all": "View All Projects"
+  },
+  "map": {
+    "title": "Find Us",
+    "description": "Visit our headquarters and manufacturing facilities in Vietnam",
+    "token_required": "Mapbox Token Required",
+    "token_instruction": "Please enter your Mapbox public token to load the map",
+    "token_placeholder": "Enter Mapbox token...",
+    "load_map": "Load Map",
+    "mapbox_link": "Get token from"
   }
 }
