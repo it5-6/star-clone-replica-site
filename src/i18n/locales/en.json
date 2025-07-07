@@ -87,6 +87,8 @@
     "badge": "OUR PROJECTS",
     "title": "Featured Projects & Installations",
     "description": "Showcasing our expertise in large-scale MEP installations across Vietnam",
+    "page_title": "Our Projects",
+    "page_description": "Explore our comprehensive portfolio of MEP system installations across Vietnam. From commercial towers to industrial facilities, we deliver excellence in every project.",
     "items": {
       "office_tower": {
         "title": "Saigon Trade Center",
@@ -110,7 +112,8 @@
       }
     },
     "view_details": "View Details",
-    "view_all": "View All Projects"
+    "view_all": "View All Projects",
+    "back_to_home": "Back to Home"
   },
   "map": {
     "title": "Find Us",

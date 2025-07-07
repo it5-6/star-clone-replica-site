@@ -1,8 +1,9 @@
-import { Search, ShoppingCart, User, Package, Truck } from "lucide-react";
+import { Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -56,8 +57,8 @@ const Header = () => {
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
                 {t('header.nav.products')}
               </Button>
-              <Button variant="ghost" className="text-white hover:bg-primary-hover">
-                {t('header.nav.projects')}
+              <Button variant="ghost" className="text-white hover:bg-primary-hover" asChild>
+                <Link to="/projects">{t('header.nav.projects')}</Link>
               </Button>
               <Button variant="ghost" className="text-white hover:bg-primary-hover">
                 {t('header.nav.services')}

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ExternalLink } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
@@ -93,8 +94,8 @@ const ProjectsSection = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button size="lg" className="animate-fade-in hover-scale" style={{ animationDelay: '0.4s' }}>
-            {t('projects.view_all')}
+          <Button size="lg" className="animate-fade-in hover-scale" style={{ animationDelay: '0.4s' }} asChild>
+            <Link to="/projects">{t('projects.view_all')}</Link>
           </Button>
         </div>
       </div>
